@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ejercicio video</title>
+  </head>
+
+  <body>
+    <figure>
+      <h3>Carga de Ficheros</h3>
+        <input type="file" id="file" onchange="fileSelect(evento)"/> <output id="fichero"></output>
+        <!-- <video id="video" src="https://ia902803.us.archive.org/15/items/nwmbc-Lorem_ipsum_video_-_Dummy_video_for_your_website/Lorem_ipsum_video_-_Dummy_video_for_your_website.mp4" 
+        type="video/mp4" controls autoplay
+        poster="https://cdn.memegenerator.es/imagenes/memes/full/24/11/24113811.jpg" 
+        width="620">
+            <track label="Español" kind="subtitles" srclang="es">
+            <p>El reproductor que estás usando no permite reproducir dicho contenido, puedes descargarlo en</p>
+            <a href=https://ia902803.us.archive.org/15/items/nwmbc-Lorem_ipsum_video_-_Dummy_video_for_your_website/Lorem_ipsum_video_-_Dummy_video_for_your_website.mp4></a>
+        </video> -->
+    </figure>
+    <div>
+        <button onclick="document.getElementById('video').play();">Reproducir</button>
+        <button onclick="document.getElementById('video').pause();">Pausar</button>
+        <button onclick="document.getElementById('video').volume += 0.1;">Subir Volumen</button>
+        <button onclick="document.getElementById('video').volume -= 0.1;">Bajar Volumen</button>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
